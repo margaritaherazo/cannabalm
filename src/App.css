@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
+  background-color: #faeeca;
 }
 
 h1, h2, h3 {
@@ -63,7 +63,7 @@ a {
 
 /* Hero section */
 .hero {
-  background-color: #3498db;
+  background-color: #f3e280;
   padding: 60px 0;
   color: white;
   text-align: center;
