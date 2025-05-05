@@ -1,23 +1,37 @@
-
 import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
       <div className="container">
-        <Link className="navbar-brand" to="/">Cannabalm</Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
-              <Link className="nav-link" to="/testimonials">Testimonials</Link>
+        <div className="d-flex w-100 justify-content-between align-items-center">
+
+          {/* Left links */}
+          <ul className="navbar-nav flex-row">
+            <li className="nav-item me-3">
+              <Link className="nav-link" to="/testemunhos">Testemunhos</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/product">Product</Link>
+            <li className="nav-item me-3">
+              <Link className="nav-link" to="/produto">Produto</Link>
             </li>
           </ul>
+
+          {/* Center brand */}
+          <Link className="navbar-brand mx-auto" to="/">Cannabalm</Link>
+
+          {/* Right links */}
+          <ul className="navbar-nav flex-row">
+            <li className="nav-item ms-3">
+              <a className="nav-link" href="#sobre">Sobre</a>
+            </li>
+            <li className="nav-item ms-3">
+              <a className="nav-link" href="#beneficios">Benefícios</a>
+            </li>
+            <li className="nav-item ms-3">
+              <a className="nav-link" href="#contato">Contato</a>
+            </li>
+          </ul>
+
         </div>
       </div>
     </nav>
