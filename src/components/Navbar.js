@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logo from '../assets/imgs/24.png';
 
 function Navbar() {
   return (
@@ -9,15 +10,17 @@ function Navbar() {
           {/* Left links */}
           <ul className="navbar-nav flex-row">
             <li className="nav-item me-3">
-              <Link className="nav-link" to="/testemunhos">Testemunhos</Link>
+              <Link className="nav-link" to="/testimonials">Testemunhos</Link>
             </li>
             <li className="nav-item me-3">
-              <Link className="nav-link" to="/produto">Produto</Link>
+              <Link className="nav-link" to="/product">Produto</Link>
             </li>
           </ul>
 
           {/* Center brand */}
-          <Link className="navbar-brand mx-auto" to="/">Cannabalm</Link>
+          <Link className="navbar-brand mx-auto" to="/">
+            <img src={logo} alt="Cannabalm Logo" />
+          </Link>
 
           {/* Right links */}
           <ul className="navbar-nav flex-row">
