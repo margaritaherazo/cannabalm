@@ -17,8 +17,30 @@ a {
 
 /* Navbar styles */
 .navbar {
-  background-color: #ffffff;
+  background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding-top: 0;
+  padding-bottom: 0;
+  min-height: 100px;
+}
+
+.navbar .instagram-icon {
+  top: 30px;
+  left: 50px;
+  position: absolute;
+}
+
+.navbar .language-toggle {
+  top: 30px;
+  right: 50px;
+  position: absolute;
+}
+
+.navbar .navbar-brand {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -27,8 +49,13 @@ a {
 }
 
 .navbar .navbar-brand img {
-  height: 100px; 
+  height: 100%;
+  max-height: 170px; 
+  object-fit: contain;
+  padding: 0;
+  margin: 0;
 }
+
 
 .navbar-toggler-icon {
   background-color: #333;
@@ -63,9 +90,3 @@ a {
   text-align: center;
 }
 
-/* Additional Styles (if any) */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}

@@ -4,6 +4,18 @@ import logo from '../assets/imgs/24.png';
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      
+       {/* Top Left: Instagram Icon */}
+       <div className="instagram-icon">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+          <img src="https://img.icons8.com/ios-filled/24/000000/instagram-new.png" alt="Instagram" />
+        </a>
+      </div>
+
+      {/* Top Right: Language Toggle */}
+      <div className="language-toggle">
+        <button className="btn btn-sm ">PT / EN</button>
+      </div>
       <div className="container">
         <div className="d-flex w-100 justify-content-between align-items-center">
 
