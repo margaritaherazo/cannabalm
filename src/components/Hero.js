@@ -1,7 +1,9 @@
 function Hero() {
     return (
-      <section>
-        <h1>Welcome to Cannabalm</h1>
+        <section className="hero-section">
+        <div className="hero-content">
+          <h1></h1>
+        </div>
       </section>
     );
   }

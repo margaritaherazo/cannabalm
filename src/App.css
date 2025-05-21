@@ -62,12 +62,26 @@ a {
 }
 
 /* Hero section */
-.hero {
-  background-color: #f3e280;
-  padding: 60px 0;
+.hero-section {
+  position: relative;
+  background-image: url('./assets/imgs/leafs6.jpeg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
   text-align: center;
+  margin-top: 150px;
 }
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: white;
+  padding: 20px 40px;
+}
+
 
 /* About section */
 #sobre {
