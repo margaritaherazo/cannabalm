@@ -3,7 +3,7 @@ import logo from '../assets/imgs/24.png';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav className="navbar navbar-expand-lg fixed-top custom-navba">
       
        {/* Top Left: Instagram Icon */}
        <div className="instagram-icon">
