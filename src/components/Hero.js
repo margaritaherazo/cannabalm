@@ -15,8 +15,8 @@ function Hero() {
 
         {/* Buttons */}
         <div className="mt-4">
-          <Link to="/product" className="btn btn-outline-success">Produto</Link>
-          <a href="#beneficios" className="btn btn-outline-success">Benefícios</a>
+          <Link to="/product" className="btn btn-outline-success rounded-pill">Produto</Link>
+          <a href="#beneficios" className="btn btn-outline-success rounded-pill">Benefícios</a>
         </div>
         </div>
       </section>
