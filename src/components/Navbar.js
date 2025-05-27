@@ -1,9 +1,22 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/imgs/24.png';
 
 function Navbar() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => {
+      setScrolled(window.scrollY > 10); 
+    };
+
+    window.addEventListener('scroll', onScroll);
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
+
   return (
-    <nav className="navbar navbar-expand-lg fixed-top custom-navba">
+    <nav className={`navbar navbar-expand-lg fixed-top custom-navbar ${scrolled ? 'navbar-scrolled' : ''}`}>
+
       
        {/* Top Left: Instagram Icon */}
        <div className="instagram-icon">
@@ -30,8 +43,8 @@ function Navbar() {
           </ul>
 
           {/* Center brand */}
-          <Link className="navbar-brand mx-auto" to="/">
-            <img src={logo} alt="Cannabalm Logo" />
+           <Link className="navbar-brand mx-auto" to="/">
+            <img src={logo} alt="Cannabalm Logo" className="navbar-logo" />
           </Link>
 
           {/* Right links */}
