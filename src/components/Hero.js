@@ -2,14 +2,22 @@ import { Link } from 'react-router-dom';
 import productImg from '../assets/imgs/balm.jpeg';
 import productImg2 from '../assets/imgs/balm2.jpeg';
 
+
 function Hero() {
     return (
       <>
       {/* Hero Section */}
 
         <section className="hero-section">
-        <div className="hero-content">
-          <h1>Essencia da natureza e o cuidado artesanal para trazer bem-estar ao seu dia a dia</h1>
+        <div className="hero-content text-center">
+          <h1>Essência da natureza</h1>
+        <h3>com toque artesanal</h3>
+
+        {/* Buttons */}
+        <div className="mt-4">
+          <Link to="/product" className="btn btn-outline-success">Produto</Link>
+          <a href="#beneficios" className="btn btn-outline-success">Benefícios</a>
+        </div>
         </div>
       </section>
 
